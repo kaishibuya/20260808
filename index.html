@@ -95,7 +95,13 @@
         <label for="species">星人種別</label>
         <select id="species" name="species">
           <option value="" disabled selected>選択してください</option>
-          <!-- TODO: 選択肢を追加する -->
+            <option value="earth">地球人</option>
+            <option value="mars">火星人</option>
+            <option value="venus">金星人</option>
+            <option value="pluto">冥王星人</option>
+            <option value="saturn">土星人</option>
+            <option value="neptune">海王星人</option>
+            <option value="other">その他の星人</option>
         </select>
       </div>
       <div class="register__field">
@@ -105,13 +111,22 @@
       <div class="register__field">
         <label>希望の出会い方</label>
         <div class="register__radio-group">
-          <!-- TODO: ラジオボタンの選択肢を追加する -->
-          <!-- テンプレート：
           <label class="register__radio-label">
-            <input type="radio" name="meeting-style" value="値">
-            選択肢のテキスト
+            <input type="radio" name="meeting-style" value="moon-dinner">
+            月面ディナー
           </label>
-          -->
+          <label class="register__radio-label">
+            <input type="radio" name="meeting-style" value="space-walk">
+            宇宙遊泳デート
+          </label>
+          <label class="register__radio-label">
+            <input type="radio" name="meeting-style" value="planet-tour">
+            惑星巡りツアー
+          </label>
+          <label class="register__radio-label">
+            <input type="radio" name="meeting-style" value="online">
+            星間オンライン通話
+          </label>
         </div>
       </div>
       <button type="submit" class="register__submit">登録する</button>
