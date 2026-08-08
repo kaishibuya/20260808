@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StarMatch - 地球人×異星人マッチングサービス</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヒーローセクション -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <h1 class="hero__title"><!-- TODO: キャッチコピーを入れる --></h1>
+      <p class="hero__subtitle"><!-- TODO: サブコピーを入れる --></p>
+      <a href="#register" class="hero__cta">無料で登録する</a>
+    </div>
+  </section>
+
+  <!-- 対応星人一覧セクション -->
+  <section class="aliens" id="aliens">
+    <h2 class="section-title">対応星人一覧</h2>
+    <div class="aliens__grid">
+      <!-- TODO: 星人カードを3枚以上追加する -->
+      <!-- カード1枚のテンプレート：
+      <div class="alien-card">
+        <div class="alien-card__emoji">👽</div>
+        <h3 class="alien-card__name">名前</h3>
+        <p class="alien-card__origin">出身星：○○星</p>
+        <p class="alien-card__personality">性格：○○</p>
+        <p class="alien-card__comment">一言コメント</p>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <!-- 利用の流れセクション -->
+  <section class="flow" id="flow">
+    <h2 class="section-title">利用の流れ</h2>
+    <div class="flow__steps">
+      <!-- TODO: 3〜4ステップを追加する -->
+      <!-- ステップ1つのテンプレート：
+      <div class="flow__step">
+        <span class="flow__step-number">1</span>
+        <span class="flow__step-icon">🚀</span>
+        <p class="flow__step-text">ステップの説明</p>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <!-- 成功事例セクション -->
+  <section class="stories" id="stories">
+    <h2 class="section-title">成功事例</h2>
+    <div class="stories__grid">
+      <!-- TODO: 2〜3件の事例を追加する -->
+      <!-- 事例1件のテンプレート：
+      <div class="story-card">
+        <p class="story-card__comment">"コメント内容"</p>
+        <p class="story-card__couple">カップル名</p>
+        <p class="story-card__type">地球人 × ○○星人</p>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <!-- 料金プランセクション -->
+  <section class="pricing" id="pricing">
+    <h2 class="section-title">料金プラン</h2>
+    <div class="pricing__grid">
+      <!-- TODO: 2〜3プランを追加する -->
+      <!-- プラン1つのテンプレート：
+      <div class="pricing-card">
+        <h3 class="pricing-card__name">プラン名</h3>
+        <p class="pricing-card__price">月額 ○○地球円<br><span class="pricing-card__sub-price">（○○銀河共通ポイント）</span></p>
+        <ul class="pricing-card__features">
+          <li>機能1</li>
+          <li>機能2</li>
+          <li>機能3</li>
+        </ul>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <!-- 登録フォームセクション -->
+  <section class="register" id="register">
+    <h2 class="section-title">無料登録</h2>
+    <form class="register__form" id="register-form">
+      <div class="register__field">
+        <label for="name">名前</label>
+        <input type="text" id="name" name="name" placeholder="あなたの名前">
+      </div>
+      <div class="register__field">
+        <label for="species">星人種別</label>
+        <select id="species" name="species">
+          <option value="" disabled selected>選択してください</option>
+          <!-- TODO: 選択肢を追加する -->
+        </select>
+      </div>
+      <div class="register__field">
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" placeholder="example@earth.com">
+      </div>
+      <div class="register__field">
+        <label>希望の出会い方</label>
+        <div class="register__radio-group">
+          <!-- TODO: ラジオボタンの選択肢を追加する -->
+          <!-- テンプレート：
+          <label class="register__radio-label">
+            <input type="radio" name="meeting-style" value="値">
+            選択肢のテキスト
+          </label>
+          -->
+        </div>
+      </div>
+      <button type="submit" class="register__submit">登録する</button>
+    </form>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer" id="footer">
+    <!-- TODO: フッターの内容を追加する -->
+    <!-- 含めるもの：サービス名 / コピーライト / SNSリンク（ダミー） -->
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
