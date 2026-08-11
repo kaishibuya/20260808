@@ -11,9 +11,9 @@
   <!-- ヒーローセクション -->
   <section class="hero" id="hero">
     <div class="hero__content">
-      <h1 class="hero__title"><!-- TODO: キャッチコピーを入れる --></h1>
-      <p class="hero__subtitle"><!-- TODO: サブコピーを入れる --></p>
-      <a href="#register" class="hero__cta">無料で登録する</a>                            
+      <h1 class="hero__title">地球人×異星人、新しい出会い。</h1>
+      <p class="hero__subtitle">銀河系最大級のマッチングサービス。あなたの運命の星人、見つけませんか？</p>
+      <a href="#register" class="hero__cta">無料で登録する</a>
     </div>
   </section>
 
@@ -21,16 +21,37 @@
   <section class="aliens" id="aliens">
     <h2 class="section-title">対応星人一覧</h2>
     <div class="aliens__grid">
-      <!-- TODO: 星人カードを3枚以上追加する -->
-      <!-- カード1枚のテンプレート：
-      <div class="alien-card">
-        <div class="alien-card__emoji">👽</div>
-        <h3 class="alien-card__name">名前</h3>
-        <p class="alien-card__origin">出身星：○○星</p>
-        <p class="alien-card__personality">性格：○○</p>
-        <p class="alien-card__comment">一言コメント</p>
-      </div>
-      -->
+<div class="alien-card">
+  <div class="alien-card__emoji">🔴</div>
+  <h3 class="alien-card__name">マルス・レッドフィールド</h3>
+  <p class="alien-card__origin">出身星：火星</p>
+  <p class="alien-card__personality">性格：真面目・几帳面</p>
+  <p class="alien-card__comment">「約束の時間は0.001秒単位で守ります」</p>
+</div>
+
+<div class="alien-card">
+  <div class="alien-card__emoji">💛</div>
+  <h3 class="alien-card__name">ヴィーナス・ラブリー</h3>
+  <p class="alien-card__origin">出身星：金星</p>
+  <p class="alien-card__personality">性格：情熱的・ロマンチスト</p>
+  <p class="alien-card__comment">「デートは毎回サプライズじゃないと物足りないの」</p>
+</div>
+
+<div class="alien-card">
+  <div class="alien-card__emoji">🟣</div>
+  <h3 class="alien-card__name">プルート・シャドウ</h3>
+  <p class="alien-card__origin">出身星：冥王星</p>
+  <p class="alien-card__personality">性格：ミステリアス・無口</p>
+  <p class="alien-card__comment">「……（沈黙が心地いい関係、求む）」</p>
+</div>
+
+<div class="alien-card">
+  <div class="alien-card__emoji">🪐</div>
+  <h3 class="alien-card__name">サターン・リングス</h3>
+  <p class="alien-card__origin">出身星：土星</p>
+  <p class="alien-card__personality">性格：おおらか・マイペース</p>
+  <p class="alien-card__comment">「輪っかの数だけ愛を注ぎます」</p>
+</div>
     </div>
   </section>
 
@@ -145,7 +166,13 @@
         <label for="species">星人種別</label>
         <select id="species" name="species">
           <option value="" disabled selected>選択してください</option>
-          <!-- TODO: 選択肢を追加する -->
+            <option value="earth">地球人</option>
+            <option value="mars">火星人</option>
+            <option value="venus">金星人</option>
+            <option value="pluto">冥王星人</option>
+            <option value="saturn">土星人</option>
+            <option value="neptune">海王星人</option>
+            <option value="other">その他の星人</option>
         </select>
       </div>
       <div class="register__field">
@@ -155,13 +182,22 @@
       <div class="register__field">
         <label>希望の出会い方</label>
         <div class="register__radio-group">
-          <!-- TODO: ラジオボタンの選択肢を追加する -->
-          <!-- テンプレート：
           <label class="register__radio-label">
-            <input type="radio" name="meeting-style" value="値">
-            選択肢のテキスト
+            <input type="radio" name="meeting-style" value="moon-dinner">
+            月面ディナー
           </label>
-          -->
+          <label class="register__radio-label">
+            <input type="radio" name="meeting-style" value="space-walk">
+            宇宙遊泳デート
+          </label>
+          <label class="register__radio-label">
+            <input type="radio" name="meeting-style" value="planet-tour">
+            惑星巡りツアー
+          </label>
+          <label class="register__radio-label">
+            <input type="radio" name="meeting-style" value="online">
+            星間オンライン通話
+          </label>
         </div>
       </div>
       <button type="submit" class="register__submit">登録する</button>
@@ -170,8 +206,13 @@
 
   <!-- フッター -->
   <footer class="footer" id="footer">
-    <!-- TODO: フッターの内容を追加する -->
-    <!-- 含めるもの：サービス名 / コピーライト / SNSリンク（ダミー） -->
+  <p>StarMatch - 銀河系最大級のマッチングサービス</p>
+    <p>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+    </p>
+    <p>&copy; 2026 StarMatch Inc. All rights reserved.</p>  
   </footer>
 
   <script src="main.js"></script>
